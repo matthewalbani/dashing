@@ -1,0 +1,48 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #E7C00D;
+$background-color-failed: #d4514d;
+$background-color-passed: #649d58;
+$value-color:       #fff;
+
+$title-color:       rgba(255, 255, 255, 0.7);
+$moreinfo-color:    rgba(255, 255, 255, 0.7);
+
+// ----------------------------------------------------------------------------
+// Widget-build_status styles
+// ----------------------------------------------------------------------------
+.widget-build-status {
+
+  background-color: $background-color;
+
+  &.status-passed {
+     background-color:  $background-color-passed;
+  }
+  &.status-failed {
+     background-color:  $background-color-failed;
+  }
+
+  .title {
+    color: $title-color;
+  }
+
+  .value {
+    color: $value-color;
+  }
+
+  .change-rate {
+    font-weight: 500;
+    font-size: 30px;
+    color: $value-color;
+  }
+
+  .more-info {
+    color: $moreinfo-color;
+  }
+
+  .updated-at {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+}
