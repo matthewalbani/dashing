@@ -1,4 +1,4 @@
-<% content_for :title do %>My super sweet dashboard<% end %>
+<% content_for :title do %>Nutro Dashboard<% end %>
 <div class="gridster">
   <ul>
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
@@ -10,8 +10,11 @@
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="nutro_wholevm" data-view="BuildStatus" data-title="Nutro Wholevm" data-moreinfo="# of failed tests"></div>
     </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="nutro_info" data-view="List" data-unordered="true" data-moreinfo="Nutro versions"></div>
+    </li>
     <li data-row="2" data-col="1" data-sizex="2" data-sizey="1">
-      <div data-id="on_nutro" data-view="List" data-unordered="true" data-title="Currently on Nutro" data-moreinfo="prs on nutro"></div>
+      <div data-id="on_nutro" data-view="ListWithLinks" data-unordered="true" data-title="Currently on Nutro" data-moreinfo="links to prs on nutro"></div>
     </li>
     <li data-row="2" data-col="1" data-sizex="2" data-sizey="1">
       <div data-id="queue" data-view="List" data-unordered="false" data-title="Queue" data-moreinfo="waitin to go on nutro"></div>

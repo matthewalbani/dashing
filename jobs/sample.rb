@@ -1,3 +1,5 @@
+
+
 current_valuation = 0
 current_karma = 0
 
@@ -11,3 +13,5 @@ SCHEDULER.every '2s' do
   send_event('karma', { current: current_karma, last: last_karma })
   send_event('synergy',   { value: rand(100) })
 end
+
+   # YourDataModel.new({:createdAt => DateTime.now, :serviceName => 'service1', :available => succeed}).save()
